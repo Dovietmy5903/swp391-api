@@ -68,8 +68,16 @@ public class UserService extends BaseServiceImpl<User, UUID> {
 
         return AuthenticationResponse.builder()
                 .authenticated(true)
+                .id(user.getId().toString())
                 .token(token)
                 .message("Success")
+                .username(user.getUsername())
+                .email(user.getEmail())
+                .fullName(user.getFullName())
+                .phone(user.getPhone())
+                .customerCode(user.getCustomerCode())
+                .accountBalance(user.getAccountBalance())
+                .avt(user.getAvt())
                 .build();
     }
 
