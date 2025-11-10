@@ -14,6 +14,7 @@ public class QuizOptionService extends BaseServiceImpl<QuizOption, Integer> {
     @Autowired
     private EntityManager entityManager;
     
+    
     @Autowired
     private QuizOptionRepository quizOptionRepository;
 
